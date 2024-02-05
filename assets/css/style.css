@@ -26,6 +26,14 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.seccion {
+  background-color: white; /* Color de fondo gris claro */
+  padding: 20px; /* Espaciado interno */
+  border: 1px solid #ddd; /* Borde de 1 píxel sólido de color gris claro */
+  text-align: center; /* Centrar el texto */
+  margin: 10px; /* Márgenes externos */
+}
+
 #main {
   margin-top: 50px;
 }
