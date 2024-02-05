@@ -5,6 +5,7 @@
 body {
   font-family: "Open Sans", sans-serif;
   color: #444444;
+  background-color: #686767;
 }
 
 a {
@@ -27,12 +28,12 @@ h6 {
 }
 
 .seccion {
-  background-color: white; /* Color de fondo gris claro */
-  padding: 20px; /* Espaciado interno */
-  border: 1px solid #ddd; /* Borde de 1 píxel sólido de color gris claro */
-  text-align: center; /* Centrar el texto */
-  margin: 10px; /* Márgenes externos */
-}
+      background-color: white; 
+      padding: 20px; 
+      border: 1px solid #ddd; 
+      text-align: center; 
+      margin: 10px; 
+    }
 
 #main {
   margin-top: 50px;
@@ -55,7 +56,7 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #f5f5f5;
+  background: #fff;
 }
 
 #preloader:before {
