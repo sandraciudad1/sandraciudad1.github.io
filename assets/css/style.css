@@ -609,7 +609,12 @@ section {
 --------------------------------------------------------------*/
 .about .content h3 {
   font-weight: 700;
-  font-size: 26px;
+  font-size: 31px;
+  color: #555555;
+}
+
+.about .content h4 {
+  font-size: 22px;
   color: #555555;
 }
 
@@ -1120,3 +1125,5 @@ section {
 .contact .php-email-form .form-group {
   padding-bottom: 8px;
 }
+
+
