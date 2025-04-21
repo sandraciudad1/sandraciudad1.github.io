@@ -14,7 +14,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Detalles portfolio (Plataformas)</title>
+  <title>Detalles portfolio (Mobile Game)</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -41,8 +41,8 @@
 
   <main id="main">
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-detailsº" class="portfolio-details">
+     <!-- ======= Portfolio Details Section ======= -->
+     <section id="portfolio-detailsº" class="portfolio-details">
       <div class="container">
 
           <div >
@@ -50,42 +50,33 @@
               <h2>Información del proyecto</h2>
               <p></p>
               <ul>
-                <li><strong>Fecha realización:</strong> Julio 2024</li>
-                <li><strong>Motor de videojuegos utilizado:</strong> Unity 2D</li>
+                <li><strong>Fecha realización:</strong> Diciembre 2024</li>
+                <li><strong>Motor de videojuegos utilizado:</strong> Unity 3D</li>
               </ul>
             </div>
             <div class="portfolio-description">
               <h3>Descripción del proyecto</h3>
               <br>
               <p>
-                Este proyecto consiste en el desarrollo de un videojuego de plataformas en 2D inspirado en títulos clásicos del género, implementado 
-                en Unity. El jugador atraviesa distintos niveles enfrentándose a una variedad de enemigos, recolectando objetos especiales y explorando 
-                entornos con desplazamiento lateral dinámico. La arquitectura del juego se estructuró en fases independientes, accesibles progresivamente 
-                a través de un sistema de escenas gestionado con PlayerPrefs.
+                Este proyecto consistió en el desarrollo de un videojuego móvil de puntería, en el que el jugador debe disparar flechas con un arco 
+                hacia una diana en distintos niveles con condiciones ambientales y dinámicas variables. Diseñado e implementado en Unity, el sistema 
+                de control se adaptó a dispositivos móviles mediante inputs táctiles, permitiendo una interacción directa e intuitiva. El juego cuenta 
+                con cuatro niveles de dificultad creciente, incorporando progresivamente factores como la distancia al objetivo, la presencia de viento, 
+                el movimiento de la diana, y la combinación simultánea de todos los elementos.       
               </p>
               <p>
-                Se diseñaron varios tipos de enemigos diferenciados con comportamientos únicos, definidos mediante programación orientada a objetos y 
-                patrones de IA simples. Las variaciones incluyen diferentes cantidades de puntos de vida, velocidades de movimiento ajustadas, y 
-                sistemas de ataque tanto por colisión directa como mediante proyectiles a distancia. La gestión del daño y las condiciones de derrota se 
-                implementaron con control de colisiones y detección de impactos.
+                El sistema de disparo fue desarrollado mediante física realista utilizando componentes Rigidbody y fuerzas aplicadas con AddForce, calculando 
+                la trayectoria de la flecha a partir de la dirección del toque y su intensidad. La influencia del viento se gestiona mediante una fuerza constante 
+                o variable aplicada a la flecha durante el vuelo, afectando la trayectoria y exigiendo mayor precisión por parte del jugador.               
               </p>
               <p>
-                El jugador puede recoger power-ups que le otorgan habilidades temporales como aumento de fuerza, velocidad o invulnerabilidad. Estos ítems 
-                están integrados con un sistema de temporización y feedback visual, permitiendo una gestión sencilla de su duración y efectos en el gameplay.
-              </p>
-              <p>
-                El entorno visual incluye un sistema de fondo dinámico con efecto parallax, implementado mediante la vinculación del desplazamiento del fondo 
-                al movimiento del jugador, utilizando interpolaciones suaves y desplazamiento proporcional en capas superpuestas. Este efecto mejora la percepción 
-                de profundidad y la inmersión del usuario.
-              </p>
-              <p>
-                A nivel técnico, se emplearon Animator Controllers para gestionar las animaciones del jugador y enemigos, junto a múltiples colisionadores 
-                organizados en jerarquías de objetos hijos para facilitar la detección precisa de interacciones y la segmentación del comportamiento. Todo el 
-                proyecto se diseñó para ser escalable y modular, permitiendo la futura integración de nuevos niveles, enemigos y mecánicas adicionales.
+                El comportamiento dinámico de la diana se implementó mediante interpolaciones y movimientos oscilatorios. El sistema de detección de impactos se 
+                gestionó con OnCollisionEnter, permitiendo la validación de aciertos y la asignación de puntuaciones. Además, se diseñó una interfaz de usuario 
+                adaptativa mediante Canvas y TextMeshPro que proporciona información en tiempo real sobre la puntuación, número de flechas restantes y condiciones del viento.        
               </p>
 
               <br>
-              <p>Para más información, puede consultar la <a href="https://github.com/sandraciudad1/PlatformGame">URL del repositorio</a> o ver una <a href="https://youtu.be/tCNVGFCCrpg">demo</a> del juego</p>
+              <p>Para más información, puede consultar la <a href="https://github.com/sandraciudad1/BullseyePrecision">URL del repositorio</a> o ver una <a href="https://youtu.be/Gf0D245ApvU">demo</a> del juego</p>
             </div>
           </div>
 

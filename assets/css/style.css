@@ -36,8 +36,22 @@ h6 {
       margin: 10px; 
     }
 
+    
 #main {
   margin-top: 50px;
+}
+
+.seccion2 {
+  background-color: #f8f8f8; 
+  padding: 20px; 
+  border: 1px solid #ddd; 
+  text-align: center; 
+  margin: 10px; 
+}
+
+
+#main {
+margin-top: 50px;
 }
 
 @media (max-width: 992px) {

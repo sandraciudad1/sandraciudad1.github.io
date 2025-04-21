@@ -14,7 +14,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Detalles portfolio (Ajedrez)</title>
+  <title>Detalles portfolio (Topos)</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -58,11 +58,24 @@
               <h3>Descripción del proyecto</h3>
               <br>
               <p>
-                Whack a Mole es un juego interactivo cuyo objetivo es que el jugador golpee un topo que aparece aleatoriamente en distintas posiciones de la escena. Lainterfaz del juego cuenta con dos elementos clave: un temporizador de cuenta atrás, que determina la duración de la partida, y un marcador de puntuación, que refleja los puntos acumulados por el jugador.
+                Este proyecto consistió en la implementación de una versión digital del clásico Whack-a-Mole. El objetivo fue diseñar un juego en 2D con 
+                mecánicas basadas en la aparición aleatoria de objetivos que deben ser golpeados por el jugador en un tiempo limitado, aplicando principios 
+                fundamentales de programación, gestión de eventos e interacción con objetos en pantalla.
               </p>
               <p>
-                El topo se mostrará en posiciones aleatorias dentro de la escena, y el jugador deberá hacer click sobre él para sumar puntos. Cada vez que el usuario acierte al topo, este desaparecerá y volverá a aparecer en otra posición aleatoria. Adicionalmente, el topo tiene un contador interno, de modo que si el jugador no lo golpea dentro de un tiempo establecido, este cambiará de posición sin que se añadan puntos al marcador. Por lo tanto, la rapidez de reacción del jugador será clave para maximizar la puntuación dentro del tiempo limitado.
+                El sistema principal se estructuró mediante el uso de prefabs reutilizables y lógica de posicionamiento aleatorio, utilizando la clase 
+                Random.Range() y una colección de Vector3 para definir las posibles ubicaciones de aparición del topo. El control de interacción se gestionó 
+                con OnMouseDown() sobre un Collider 3D, lo que permitió detectar clics en los objetos dentro de una escena 2D con precisión y bajo coste computacional. 
+                Se estableció una cuenta atrás general del juego, controlada por un temporizador global, y una cuenta atrás interna por cada aparición del topo, que se 
+                reinicia tras cada golpe o tras el paso del tiempo sin interacción.
               </p>
+              <p>
+                La interfaz de usuario fue diseñada con Canvas y TextMeshPro para mostrar el tiempo restante y la puntuación del jugador en tiempo real. Además, se 
+                implementó una lógica de finalización que desactiva la aparición de topos cuando finaliza el temporizador global. El proyecto se desarrolló siguiendo 
+                principios de programación orientada a objetos en C#, priorizando la modularidad, claridad del código y facilidad para futuras ampliaciones, como la 
+                aparición de múltiples topos, incremento de dificultad progresiva o incorporación de power-ups.
+              </p>
+
               <br>
               <p>Para más información, puede consultar la <a href="https://github.com/sandraciudad1/WhackAMole">URL del repositorio</a> o ver una <a href="https://youtu.be/Vae9eZWc3-I">demo</a> del juego</p>
             </div>

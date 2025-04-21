@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HJ76RKSTH4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-HJ76RKSTH4');
+  </script>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Detalles portfolio (Pokemon)</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/favicon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <main id="main">
+
+     <!-- ======= Portfolio Details Section ======= -->
+     <section id="portfolio-detailsº" class="portfolio-details">
+      <div class="container">
+
+          <div >
+            <div class="portfolio-info">
+              <h2>Información del proyecto</h2>
+              <p></p>
+              <ul>
+                <li><strong>Fecha realización:</strong> Noviembre 2024</li>
+                <li><strong>Motor de videojuegos utilizado:</strong> Unity 3D</li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h3>Descripción del proyecto</h3>
+              <br>
+              <p>
+                Este proyecto corresponde al desarrollo de un videojuego First Person Shooter en Unity con funcionalidades tanto para un jugador 
+                como para modo multijugador en red, utilizando Photon Unity Networking (PUN). El diseño del sistema combina mecánicas clásicas de 
+                combate con una capa estratégica basada en economía, recolección y personalización del equipamiento.
+              </p>
+              <p>
+                El jugador controla un personaje en perspectiva de primera persona con movimiento libre, salto, esprint y rotación de cámara mediante 
+                PlayerController, con un sistema de estamina dinámica que limita las acciones físicas y se gestiona en tiempo real desde la interfaz 
+                de usuario. El disparo se implementó mediante Raycast, con gestión de munición limitada, recarga manual, sonido de disparo y sistema 
+                de zoom activado con botón derecho. Las armas tienen capacidades diferenciadas, y pueden ser adquiridas a través de una tienda interna, 
+                donde el jugador gasta monedas recogidas en el escenario o ganadas al eliminar enemigos.
+              </p>
+              <p>
+                La UI del juego incluye elementos visuales adaptados a la acción en tiempo real: tipo de arma equipada, cargador actual y balas restantes, 
+                contador de monedas, número de enemigos eliminados, cronómetro de la partida, barra de vida y un minimapa interactivo. Este último muestra 
+                en tiempo real la posición del jugador (blanco), enemigos activos (rojos) y objetos recolectables (verdes), como monedas, pociones de curación 
+                y potenciadores temporales que mejoran el daño del arma.                 
+              </p>
+              <p>
+                El entorno fue generado con el Editor de Terrenos de Unity y contiene objetos destructibles e interactivos. En la extensión multijugador, se 
+                implementó la sincronización en red con Photon PUN, utilizando PhotonView, PhotonTransformView y RPCs para la correcta replicación de estados, 
+                disparos, recolección de ítems y condiciones de victoria entre los jugadores. El emparejamiento se resolvió mediante PhotonNetwork.JoinOrCreateRoom, 
+                permitiendo el acceso inmediato a partidas públicas.                 
+              </p>
+              <p>
+                La arquitectura del proyecto sigue una estructura modular y extensible, lo que facilita la incorporación de nuevas armas, enemigos, modos de juego o 
+                mejoras visuales. Además, se contempló la optimización para dispositivos de gama media, asegurando una experiencia fluida tanto en modo local como en 
+                entornos multijugador.             
+              </p>
+
+              <br>
+              <p>Para más información, puede consultar la <a href="https://github.com/sandraciudad1/ShooterFPSMultiplayer">URL del repositorio</a> o ver una <a href="https://youtu.be/bQfEELKuRZw">demo</a> de la versión de un jugador y una <a href="https://youtu.be/BpJ5s89voKQ">demo</a> de la versión multijugador</p>
+            </div>
+          </div>
+
+
+      </div>
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

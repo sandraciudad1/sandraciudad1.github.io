@@ -14,7 +14,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Detalles portfolio (Plataformas)</title>
+  <title>Detalles portfolio (RacingGame)</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -41,8 +41,8 @@
 
   <main id="main">
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-detailsº" class="portfolio-details">
+     <!-- ======= Portfolio Details Section ======= -->
+     <section id="portfolio-detailsº" class="portfolio-details">
       <div class="container">
 
           <div >
@@ -50,42 +50,39 @@
               <h2>Información del proyecto</h2>
               <p></p>
               <ul>
-                <li><strong>Fecha realización:</strong> Julio 2024</li>
-                <li><strong>Motor de videojuegos utilizado:</strong> Unity 2D</li>
+                <li><strong>Fecha realización:</strong> Noviembre 2024</li>
+                <li><strong>Motor de videojuegos utilizado:</strong> Unity 3D</li>
               </ul>
             </div>
             <div class="portfolio-description">
               <h3>Descripción del proyecto</h3>
               <br>
               <p>
-                Este proyecto consiste en el desarrollo de un videojuego de plataformas en 2D inspirado en títulos clásicos del género, implementado 
-                en Unity. El jugador atraviesa distintos niveles enfrentándose a una variedad de enemigos, recolectando objetos especiales y explorando 
-                entornos con desplazamiento lateral dinámico. La arquitectura del juego se estructuró en fases independientes, accesibles progresivamente 
-                a través de un sistema de escenas gestionado con PlayerPrefs.
+                Este proyecto consistió en el desarrollo de un simulador de conducción con dos modalidades diferenciadas: un modo circuito con vista en 
+                tercera persona e interior del vehículo, y un modo de conducción libre ambientado en un entorno urbano, que ofrece un sistema de cámaras 
+                versátil para una experiencia de usuario personalizada. El objetivo principal fue integrar y gestionar múltiples cámaras virtuales con 
+                Cinemachine, logrando transiciones fluidas y una cobertura completa del vehículo en diferentes contextos de juego.
               </p>
               <p>
-                Se diseñaron varios tipos de enemigos diferenciados con comportamientos únicos, definidos mediante programación orientada a objetos y 
-                patrones de IA simples. Las variaciones incluyen diferentes cantidades de puntos de vida, velocidades de movimiento ajustadas, y 
-                sistemas de ataque tanto por colisión directa como mediante proyectiles a distancia. La gestión del daño y las condiciones de derrota se 
-                implementaron con control de colisiones y detección de impactos.
+                En el modo circuito, el jugador controla un coche de carreras sobre un trazado cerrado. Se implementaron dos cámaras principales: una en 
+                primera persona desde el interior del coche, y otra en tercera persona con seguimiento en perspectiva trasera, ambas configuradas mediante 
+                CinemachineVirtualCamera con seguimiento y enfoque sobre el objeto jugador. Se incorporaron zonas de amortiguamiento y restricciones de 
+                movimiento para evitar el desbordamiento visual fuera del área de juego.                
               </p>
               <p>
-                El jugador puede recoger power-ups que le otorgan habilidades temporales como aumento de fuerza, velocidad o invulnerabilidad. Estos ítems 
-                están integrados con un sistema de temporización y feedback visual, permitiendo una gestión sencilla de su duración y efectos en el gameplay.
+                En el modo de conducción libre, el jugador controla un turismo por una ciudad 3D, con la posibilidad de alternar entre siete vistas de cámara 
+                distintas: interior, trasera-perspectiva, frontal, trasera, lateral derecha, lateral izquierda y cenital. La transición entre cámaras se gestiona 
+                mediante un sistema de conmutación programado con scripts en C#, empleando CinemachineBrain y asignaciones dinámicas de prioridad entre cámaras 
+                virtuales. La arquitectura modular de cámaras facilita la extensión del sistema para futuras implementaciones como seguimiento por railes o cámaras 
+                contextuales reactivas.               
               </p>
               <p>
-                El entorno visual incluye un sistema de fondo dinámico con efecto parallax, implementado mediante la vinculación del desplazamiento del fondo 
-                al movimiento del jugador, utilizando interpolaciones suaves y desplazamiento proporcional en capas superpuestas. Este efecto mejora la percepción 
-                de profundidad y la inmersión del usuario.
-              </p>
-              <p>
-                A nivel técnico, se emplearon Animator Controllers para gestionar las animaciones del jugador y enemigos, junto a múltiples colisionadores 
-                organizados en jerarquías de objetos hijos para facilitar la detección precisa de interacciones y la segmentación del comportamiento. Todo el 
-                proyecto se diseñó para ser escalable y modular, permitiendo la futura integración de nuevos niveles, enemigos y mecánicas adicionales.
+                El proyecto hace uso intensivo del paquete Cinemachine como solución para control de cámara avanzada, y se apoya en principios de programación 
+                orientada a objetos para garantizar la escalabilidad del sistema de cámaras en contextos multiescena o multivehículo.
               </p>
 
               <br>
-              <p>Para más información, puede consultar la <a href="https://github.com/sandraciudad1/PlatformGame">URL del repositorio</a> o ver una <a href="https://youtu.be/tCNVGFCCrpg">demo</a> del juego</p>
+              <p>Para más información, puede consultar la <a href="https://github.com/sandraciudad1/RacingGame">URL del repositorio</a> o ver una <a href="https://youtu.be/w4c1l5c4Uhc">demo</a> del juego</p>
             </div>
           </div>
 

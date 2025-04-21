@@ -14,7 +14,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Detalles portfolio (Plataformas)</title>
+  <title>Detalles portfolio (Museo VR)</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -41,8 +41,8 @@
 
   <main id="main">
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-detailsº" class="portfolio-details">
+     <!-- ======= Portfolio Details Section ======= -->
+     <section id="portfolio-detailsº" class="portfolio-details">
       <div class="container">
 
           <div >
@@ -50,42 +50,37 @@
               <h2>Información del proyecto</h2>
               <p></p>
               <ul>
-                <li><strong>Fecha realización:</strong> Julio 2024</li>
-                <li><strong>Motor de videojuegos utilizado:</strong> Unity 2D</li>
+                <li><strong>Fecha realización:</strong> Octubre 2024</li>
+                <li><strong>Motor de videojuegos utilizado:</strong> Unity 3D</li>
               </ul>
             </div>
             <div class="portfolio-description">
               <h3>Descripción del proyecto</h3>
               <br>
               <p>
-                Este proyecto consiste en el desarrollo de un videojuego de plataformas en 2D inspirado en títulos clásicos del género, implementado 
-                en Unity. El jugador atraviesa distintos niveles enfrentándose a una variedad de enemigos, recolectando objetos especiales y explorando 
-                entornos con desplazamiento lateral dinámico. La arquitectura del juego se estructuró en fases independientes, accesibles progresivamente 
-                a través de un sistema de escenas gestionado con PlayerPrefs.
+                Este proyecto consistió en el desarrollo de una experiencia inmersiva en Realidad Virtual simulando un recorrido por un entorno museístico 
+                interactivo. Implementado en Unity y orientado al uso con gafas de realidad virtual, el sistema permite al usuario desplazarse entre distintos 
+                nodos de observación dentro de un circuito cerrado, donde puede explorar libremente elementos decorativos y objetos expositivos en 3D.    
               </p>
               <p>
-                Se diseñaron varios tipos de enemigos diferenciados con comportamientos únicos, definidos mediante programación orientada a objetos y 
-                patrones de IA simples. Las variaciones incluyen diferentes cantidades de puntos de vida, velocidades de movimiento ajustadas, y 
-                sistemas de ataque tanto por colisión directa como mediante proyectiles a distancia. La gestión del daño y las condiciones de derrota se 
-                implementaron con control de colisiones y detección de impactos.
+                La interacción principal se basa en un sistema de puntero visual fijado al centro de la vista del jugador, que activa una barra radial al mantenerse 
+                sobre una esfera de desplazamiento. Dicha barra, desarrollada con componentes de UI y animada mediante el plugin DOTween, gestiona el tiempo de espera 
+                hasta completar la acción y desencadenar el desplazamiento hacia otro nodo. El movimiento de la cámara principal se realiza mediante interpolaciones 
+                suaves para ofrecer una transición fluida entre puntos del recorrido, mejorando así la experiencia inmersiva.             
               </p>
               <p>
-                El jugador puede recoger power-ups que le otorgan habilidades temporales como aumento de fuerza, velocidad o invulnerabilidad. Estos ítems 
-                están integrados con un sistema de temporización y feedback visual, permitiendo una gestión sencilla de su duración y efectos en el gameplay.
+                El sistema está estructurado en base a prefabs reutilizables que encapsulan tanto las esferas interactivas como los comportamientos asociados a la 
+                navegación. El entorno 3D fue montado a partir de recursos obtenidos del Unity Asset Store, y toda la lógica de navegación se organizó aplicando 
+                principios de programación orientada a objetos en C#, permitiendo un flujo claro y escalable del recorrido.          
               </p>
               <p>
-                El entorno visual incluye un sistema de fondo dinámico con efecto parallax, implementado mediante la vinculación del desplazamiento del fondo 
-                al movimiento del jugador, utilizando interpolaciones suaves y desplazamiento proporcional en capas superpuestas. Este efecto mejora la percepción 
-                de profundidad y la inmersión del usuario.
-              </p>
-              <p>
-                A nivel técnico, se emplearon Animator Controllers para gestionar las animaciones del jugador y enemigos, junto a múltiples colisionadores 
-                organizados en jerarquías de objetos hijos para facilitar la detección precisa de interacciones y la segmentación del comportamiento. Todo el 
-                proyecto se diseñó para ser escalable y modular, permitiendo la futura integración de nuevos niveles, enemigos y mecánicas adicionales.
+                Este tipo de aplicación no solo resulta útil como experiencia cultural o educativa, sino también como herramienta de visualización arquitectónica o 
+                comercial, permitiendo previsualizar espacios antes de ser construidos, con importantes beneficios en términos de toma de decisiones, ahorro de costes 
+                y personalización del entorno.     
               </p>
 
               <br>
-              <p>Para más información, puede consultar la <a href="https://github.com/sandraciudad1/PlatformGame">URL del repositorio</a> o ver una <a href="https://youtu.be/tCNVGFCCrpg">demo</a> del juego</p>
+              <p>Para más información, puede consultar la <a href="https://github.com/sandraciudad1/MuseumVR">URL del repositorio</a> o ver una <a href="https://youtu.be/oiFiC5SPcq0">demo</a> del juego</p>
             </div>
           </div>
 

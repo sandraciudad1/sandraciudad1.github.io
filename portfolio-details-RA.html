@@ -14,7 +14,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Detalles portfolio (Plataformas)</title>
+  <title>Detalles portfolio (RA)</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -41,8 +41,8 @@
 
   <main id="main">
 
-    <!-- ======= Portfolio Details Section ======= -->
-    <section id="portfolio-detailsº" class="portfolio-details">
+     <!-- ======= Portfolio Details Section ======= -->
+     <section id="portfolio-detailsº" class="portfolio-details">
       <div class="container">
 
           <div >
@@ -50,42 +50,37 @@
               <h2>Información del proyecto</h2>
               <p></p>
               <ul>
-                <li><strong>Fecha realización:</strong> Julio 2024</li>
-                <li><strong>Motor de videojuegos utilizado:</strong> Unity 2D</li>
+                <li><strong>Fecha realización:</strong> Diciembre 2024</li>
+                <li><strong>Motor de videojuegos utilizado:</strong> Unity 3D</li>
               </ul>
             </div>
             <div class="portfolio-description">
               <h3>Descripción del proyecto</h3>
               <br>
               <p>
-                Este proyecto consiste en el desarrollo de un videojuego de plataformas en 2D inspirado en títulos clásicos del género, implementado 
-                en Unity. El jugador atraviesa distintos niveles enfrentándose a una variedad de enemigos, recolectando objetos especiales y explorando 
-                entornos con desplazamiento lateral dinámico. La arquitectura del juego se estructuró en fases independientes, accesibles progresivamente 
-                a través de un sistema de escenas gestionado con PlayerPrefs.
+                Este proyecto consistió en el desarrollo de una aplicación de realidad aumentada en Unity utilizando el SDK de Vuforia, centrada en la 
+                detección y gestión de múltiples image targets de forma simultánea. El objetivo fue diseñar una experiencia interactiva que reaccione 
+                de manera diferente en función de la combinación de targets detectados por la cámara del dispositivo, explorando así el potencial del 
+                reconocimiento de múltiples marcadores en un mismo espacio físico.
               </p>
               <p>
-                Se diseñaron varios tipos de enemigos diferenciados con comportamientos únicos, definidos mediante programación orientada a objetos y 
-                patrones de IA simples. Las variaciones incluyen diferentes cantidades de puntos de vida, velocidades de movimiento ajustadas, y 
-                sistemas de ataque tanto por colisión directa como mediante proyectiles a distancia. La gestión del daño y las condiciones de derrota se 
-                implementaron con control de colisiones y detección de impactos.
+                Cada imagen target fue asociada a la aparición de un modelo 3D. Adicionalmente, se definieron combinaciones específicas de dos o tres 
+                targets que, al ser detectadas de forma conjunta, desencadenaban una respuesta integrada, como la fusión de modelos y la transformación 
+                de objetos en escena.              
               </p>
               <p>
-                El jugador puede recoger power-ups que le otorgan habilidades temporales como aumento de fuerza, velocidad o invulnerabilidad. Estos ítems 
-                están integrados con un sistema de temporización y feedback visual, permitiendo una gestión sencilla de su duración y efectos en el gameplay.
+                La lógica de detección se implementó mediante ObserverBehaviour y el uso de eventos OnTargetFound y OnTargetLost, gestionando la sincronización 
+                entre múltiples observadores mediante scripts personalizados que coordinan el estado activo de cada target. Se utilizó también ARCamera como 
+                componente central de seguimiento, con ajustes optimizados para garantizar estabilidad y precisión en dispositivos móviles.            
               </p>
               <p>
-                El entorno visual incluye un sistema de fondo dinámico con efecto parallax, implementado mediante la vinculación del desplazamiento del fondo 
-                al movimiento del jugador, utilizando interpolaciones suaves y desplazamiento proporcional en capas superpuestas. Este efecto mejora la percepción 
-                de profundidad y la inmersión del usuario.
-              </p>
-              <p>
-                A nivel técnico, se emplearon Animator Controllers para gestionar las animaciones del jugador y enemigos, junto a múltiples colisionadores 
-                organizados en jerarquías de objetos hijos para facilitar la detección precisa de interacciones y la segmentación del comportamiento. Todo el 
-                proyecto se diseñó para ser escalable y modular, permitiendo la futura integración de nuevos niveles, enemigos y mecánicas adicionales.
+                Todo el proyecto se estructuró bajo un enfoque modular y escalable, utilizando programación orientada a objetos en C# para facilitar la gestión 
+                de estados, combinaciones válidas y comportamiento de los modelos aumentados. La experiencia final se diseñó para ser intuitiva, educativa y 
+                expandible, permitiendo su adaptación a nuevos targets y casos de uso sin alterar la estructura base de la aplicación.              
               </p>
 
               <br>
-              <p>Para más información, puede consultar la <a href="https://github.com/sandraciudad1/PlatformGame">URL del repositorio</a> o ver una <a href="https://youtu.be/tCNVGFCCrpg">demo</a> del juego</p>
+              <p>Para más información, puede consultar la <a href="https://github.com/sandraciudad1/AugmentedReality">URL del repositorio</a> o ver una <a href="https://youtu.be/8OixXRP3p3Y">demo</a> del juego</p>
             </div>
           </div>
 

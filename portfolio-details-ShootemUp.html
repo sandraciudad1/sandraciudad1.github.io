@@ -14,7 +14,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Detalles portfolio (Grafos)</title>
+  <title>Detalles portfolio (ShootemUp)</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -58,17 +58,26 @@
               <h3>Descripción del proyecto</h3>
               <br>
               <p>
-                Este videojuego es de tipo Shoot'em Up donde el jugador controla un cañón con el objetivo de destruir enemigos representados por rocas de distintos tamaños que se desplazan por la pantalla. Existen dos tipos de disparos disponibles para el cañón: un disparo primario, que consiste en una ráfaga de balas dirigidas a eliminar enemigos individuales, y un disparo secundario, de uso limitado, que elimina todos los enemigos presentes en la pantalla de manera simultánea.
+                Este proyecto corresponde al desarrollo de un videojuego del género Shoot’em Up, diseñado en Unity con un enfoque en la eficiencia y la 
+                arquitectura escalable. El jugador controla un cañón terrestre cuyo objetivo es eliminar enemigos representados por rocas de distintos 
+                tamaños que se desplazan por la pantalla. El sistema de disparo incluye dos modos: un disparo primario, que consiste en ráfagas continuas 
+                de balas individuales, y un disparo secundario de uso limitado, que permite limpiar la pantalla de enemigos simultáneamente.
               </p>
               <p>
-                El juego incluye un menú inicial que permite al jugador acceder al gameplay. Además, cuenta con una escena dedicada a mostrar las máximas puntuaciones obtenidas a lo largo de todas las sesiones de juego registradas.
+                El diseño del sistema de disparo se implementó con lógica de control basada en Input.GetKey para ráfagas continuas y Input.GetKeyDown para 
+                activaciones puntuales. La eficiencia del juego se garantizó mediante el uso de piscinas de objetos tanto para balas como para enemigos, 
+                minimizando la creación y destrucción de GameObjects en tiempo de ejecución y optimizando el rendimiento en dispositivos con recursos limitados.
               </p>
               <p>
-                El avance dle juego no se basa en la selección de niveles, sino que está estructurado en una serie de fases consecutivas, las cuales solo pueden ser accedidas tras completar las fases previas. Los enemigos son generados a lo largo de las partidas mediante un sistema de generación dinámica que no compromete el rendimiento del juego, asegurando una experiencia fluida y sin interrupciones.
+                Se incorporó el patrón Singleton para centralizar la gestión de componentes clave como el GameManager, el BombManager y los controladores de generación 
+                de enemigos y proyectiles. Además, se utilizaron delegados para implementar un sistema de notificación reactivo que permite a los distintos tipos de 
+                enemigos responder de forma diferenciada ante el uso del disparo secundario, manteniendo el bajo acoplamiento entre clases.
               </p>
               <p>
-                Además, este juego incluye delegados, el patrón Singleton y una piscina de objetos para las balas y para los enemigos.
+                Este proyecto sirvió como base para experimentar con principios de diseño como el principio de responsabilidad única y la segregación de interfaces, 
+                con vistas a su portabilidad a dispositivos móviles en fases posteriores.
               </p>
+
               <br>
               <p>Para más información, puede consultar la <a href="https://github.com/sandraciudad1/ShootemUp">URL del repositorio</a> o ver una <a href="https://youtu.be/XkVLJW6EHFQ">demo</a> del juego</p>
             </div>
